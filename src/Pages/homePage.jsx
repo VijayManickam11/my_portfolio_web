@@ -15,6 +15,7 @@ import "../Styles/style.css"
 
 const HomePage = () => {
   return (
+    
     <>
     <section id="home-section" className="hero">
       <div className="home-slider  owl-carousel">
