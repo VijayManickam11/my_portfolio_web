@@ -14,8 +14,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import "../Styles/style.css"
 
 const HomePage = () => {
-  return (
-    
+  return (    
     <>
     <section id="home-section" className="hero">
       <div className="home-slider  owl-carousel">
