@@ -18,7 +18,7 @@ const ProjectPage = () => {
           <div className="col-md-12 heading-section text-center">
           	<h1 className="big big-2">Projects</h1>
             <h2 className="mb-4">Our Projects</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p>Showcasing innovative and user-friendly web solutions built with modern technologies.</p>
           </div>
         </div>
     		<div className="row">

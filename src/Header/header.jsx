@@ -10,7 +10,7 @@ const Header = () => {
 
 <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div className="container">
-	      <a className="navbar-brand" href="index.html">Vijay</a>
+	      <a className="navbar-brand wave-text" href="index.html"><span>V</span><span>I</span><span>J</span><span>A</span><span>Y</span></a>
 	      <button className="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span className="oi oi-menu"></span> Menu
 	      </button>

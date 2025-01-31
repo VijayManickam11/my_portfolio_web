@@ -1,6 +1,7 @@
 import { BrowserRouter, useRoutes } from "react-router-dom";
 import HomePage from "./Pages/homePage";
 import Header from "./Header/header";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
   const AppRoutes = () => {
