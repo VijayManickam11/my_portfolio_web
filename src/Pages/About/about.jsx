@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../../Styles/style.css";
 
-import bg_1 from "../../Assets/images/bg_1.png";
+import bg_1 from "../../Assets/images/myImage.png";
 
 const AboutPage = () => {
   const [currentNumber, setCurrentNumber] = useState(0);
@@ -40,9 +40,9 @@ const AboutPage = () => {
     >
       <div className="container">
         <div className="row d-flex">
-          <div className="col-md-6 col-lg-5 d-flex">
+          <div className="col-md-6 col-lg-6 d-flex">
             <div className="img-about img d-flex align-items-stretch">
-              <div className="overlay"></div>
+              
 
               <img
                 className="img d-flex align-self-stretch align-items-center"
@@ -51,7 +51,7 @@ const AboutPage = () => {
               />
             </div>
           </div>
-          <div className="col-md-6 col-lg-7 pl-lg-5 pb-5">
+          <div className="col-md-6 col-lg-6 pl-lg-5 pb-5">
             <div className="row justify-content-start pb-3">
               <div className="col-md-12 heading-section">
                 <h1 className="big">About</h1>

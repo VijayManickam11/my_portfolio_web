@@ -8456,9 +8456,11 @@ h1, h2, h3, h4, h5,
           .owl-carousel.home-slider .slider-item .slider-text {
             text-align: center; } }
         .owl-carousel.home-slider .slider-item .slider-text .one-third {
-          width: 60%;
+          width: 49%;
           position: relative;
-          z-index: -1; }
+          z-index: -1;
+          bottom: 5%;
+        }
           .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
             position: absolute;
             top: 0;
@@ -8766,10 +8768,13 @@ h1, h2, h3, h4, h5,
   position: relative; }
   .ftco-about .img-about .img {
     display: block;
-    width: 110%;
-    height: 95%;
+    /* width: 110%; */
+    height: 100%;
     position: relative;
-    z-index: 1; }
+    z-index: 1; 
+    bottom: 10%;
+    right: 10%;
+  }
 
 .ftco-about ul.about-info {
   display: inline-block;
