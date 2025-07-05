@@ -1,0 +1,124 @@
+/* Container */
+.hero-chain-section {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper with Drop + Swing Animation */
+.hero-chain-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: top center;
+}
+
+.hero-chain-image {
+  width: 80px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: -30px;
+}
+
+/* ID Card */
+.hero-chain-card {
+  background-color: #1f2937;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Profile Image */
+.hero-chain-profile {
+  width: 128px;
+  border-radius: 9999px;
+  border: 4px solid #ffbd39;
+  margin: 0 auto 16px;
+  display: block;
+}
+
+/* Name & Title */
+.hero-chain-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffbd39;
+  margin-bottom: 16px;
+}
+
+.hero-chain-title {
+  text-align: center;
+  color: #d1d5db;
+}
+
+.hero-chain-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #d1d5db;
+}
+
+
+.masked-text {
+    font-size: 28px !important;
+    font-weight: bold;
+    color: transparent;
+    /* background-image: url('https://images.unsplash.com/photo-1732535725600-f805d8b33c9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');  */
+     background-image: url('../Assets/images/gold.jpg'); 
+    background-size: 200%; /* Enlarged for smooth animation */
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Drop + Swing Animation */
+@keyframes heroChainDropSwing {
+  0% {
+    transform: translateY(-200px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0) rotate(15deg);
+  }
+  70% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.hero-chain-drop-swing {
+  animation: heroChainDropSwing 2s ease-out forwards;
+}
+
+/* Infinite Hover Shake */
+@keyframes heroChainInfiniteShake {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(3deg); }
+  40% { transform: rotate(-3deg); }
+  60% { transform: rotate(2deg); }
+  80% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.hero-chain-hover-shake:hover {
+  animation: heroChainInfiniteShake 1s ease-in-out infinite;
+}
